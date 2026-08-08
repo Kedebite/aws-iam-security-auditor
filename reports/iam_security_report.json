@@ -1,0 +1,43 @@
+{
+    "scan_date": "2026-08-08T10:39:38.339373+00:00",
+    "summary": {
+        "total_users": 3,
+        "mfa_issues": 1,
+        "old_access_keys": 0,
+        "admin_users": 2,
+        "wildcard_users": 2,
+        "total_findings": 5
+    },
+    "findings": [
+        {
+            "user": "cloud-security-lab",
+            "issue": "MFA_NOT_ENABLED",
+            "severity": "HIGH",
+            "details": "IAM user does not have MFA enabled."
+        },
+        {
+            "user": "cloud-security-lab",
+            "issue": "ADMINISTRATOR_ACCESS",
+            "severity": "CRITICAL",
+            "details": "User has AdministratorAccess."
+        },
+        {
+            "user": "kedebi",
+            "issue": "ADMINISTRATOR_ACCESS",
+            "severity": "CRITICAL",
+            "details": "User has AdministratorAccess."
+        },
+        {
+            "user": "cloud-security-lab",
+            "issue": "WILDCARD_ACTION",
+            "severity": "CRITICAL",
+            "details": "Policy AdministratorAccess allows Action: *"
+        },
+        {
+            "user": "kedebi",
+            "issue": "WILDCARD_ACTION",
+            "severity": "CRITICAL",
+            "details": "Policy AdministratorAccess allows Action: *"
+        }
+    ]
+}
