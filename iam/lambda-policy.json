@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "IAMSecurityAuditReadOnly",
+      "Effect": "Allow",
+      "Action": [
+        "iam:ListUsers",
+        "iam:ListMFADevices",
+        "iam:ListAccessKeys",
+        "iam:ListAttachedUserPolicies",
+        "iam:ListGroupsForUser",
+        "iam:ListAttachedGroupPolicies"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
